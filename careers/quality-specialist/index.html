@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Qualitätsspezialist (m/w/d) bei CD Commerce GmbH in Bebra. Quereinsteiger willkommen. Wachstumspfad zur Qualitätsleitung in 2-3 Jahren.">
+<title>Qualitätsspezialist (m/w/d) — CD Commerce GmbH, Bebra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");</script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --color-primary: #0F172A;
+    --color-primary-light: #1E293B;
+    --color-accent: #D97757;
+    --color-accent-light: #E8956F;
+    --color-accent-dark: #C4623F;
+    --color-accent-subtle: #FDF2EE;
+    --color-white: #FFFFFF;
+    --color-neutral-50: #F8FAFC;
+    --color-neutral-100: #F1F5F9;
+    --color-neutral-200: #E2E8F0;
+    --color-neutral-300: #CBD5E1;
+    --color-neutral-400: #94A3B8;
+    --color-neutral-500: #64748B;
+    --color-neutral-700: #334155;
+    --color-success: #10B981;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+    --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+    --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.12);
+    --shadow-glow: 0 4px 16px rgba(217, 119, 87, 0.3);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-primary);
+    line-height: 1.7;
+    background: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  .container-narrow { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  /* === TOP BAR === */
+  .topbar {
+    background: var(--color-white);
+    color: var(--color-primary);
+    padding: 14px 0;
+    font-size: 14px;
+    border-bottom: 1px solid var(--color-neutral-200);
+  }
+  .topbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .topbar-logo {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    letter-spacing: -0.01em;
+  }
+  .topbar-logo strong { font-weight: 700; }
+  .topbar-logo span { font-weight: 400; }
+  .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .topbar-meta {
+    display: flex;
+    gap: 20px;
+    color: var(--color-neutral-500);
+    font-size: 13px;
+  }
+  .topbar-meta span::before { content: "•"; margin-right: 8px; color: var(--color-accent); }
+  .topbar-meta span:first-child::before { content: ""; margin-right: 0; }
+
+  /* === LANG TOGGLE === */
+  .lang-toggle {
+    display: flex;
+    background: var(--color-neutral-100);
+    border-radius: 100px;
+    padding: 3px;
+    gap: 2px;
+  }
+  .lang-btn {
+    background: transparent;
+    border: none;
+    color: var(--color-neutral-500);
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    letter-spacing: 0.5px;
+  }
+  .lang-btn.active {
+    background: var(--color-accent);
+    color: var(--color-white);
+  }
+  .lang-btn:hover:not(.active) {
+    color: var(--color-white);
+  }
+
+  /* === HERO === */
+  .hero {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+    color: var(--color-white);
+    padding: 80px 0 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: var(--color-white);
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  }
+  .hero-section-label {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--color-accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .hero-section-label::before {
+    content: "";
+    width: 32px;
+    height: 3px;
+    background: var(--color-accent);
+    border-radius: 2px;
+  }
+  .hero h1 {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+  }
+  .hero h1 .accent { color: var(--color-accent); }
+  .hero-sub {
+    font-size: 20px;
+    color: var(--color-neutral-300);
+    max-width: 640px;
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 36px;
+  }
+  .hero-pill {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    backdrop-filter: blur(8px);
+  }
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--color-accent);
+    color: var(--color-white);
+    padding: 16px 32px;
+    border-radius: var(--radius-md);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow-glow);
+  }
+  .hero-cta:hover {
+    background: var(--color-accent-dark);
+    transform: translateY(-2px);
+  }
+  .hero-cta::after {
+    content: "→";
+    font-size: 18px;
+    transition: transform 0.2s ease;
+  }
+  .hero-cta:hover::after { transform: translateX(4px); }
+
+  /* === SECTIONS === */
+  section { padding: 80px 0; }
+
+  .section-label {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--color-neutral-400);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .section-label::before {
+    content: "";
+    width: 32px;
+    height: 3px;
+    background: var(--color-accent);
+    border-radius: 2px;
+  }
+  h2 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+    color: var(--color-primary);
+  }
+  h3 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    color: var(--color-primary);
+  }
+  p { font-size: 17px; color: var(--color-neutral-700); }
+
+  .intro p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .intro strong { color: var(--color-primary); font-weight: 600; }
+
+  /* === GROWTH PATH === */
+  .growth { background: var(--color-neutral-50); }
+  .growth-track {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 40px;
+    align-items: stretch;
+  }
+  .growth-step {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: 28px 24px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-neutral-200);
+    position: relative;
+  }
+  .growth-step.active {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+  }
+  .growth-step.active h4 { color: var(--color-white); }
+  .growth-step.active p { color: var(--color-neutral-300); }
+  .growth-step.active .step-num { background: var(--color-accent); color: var(--color-white); }
+  .step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--color-accent-subtle);
+    color: var(--color-accent);
+    border-radius: 50%;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .growth-step h4 {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--color-primary);
+  }
+  .growth-step p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-neutral-500);
+  }
+  .growth-step.active::after {
+    content: attr(data-badge);
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    background: var(--color-accent);
+    color: var(--color-white);
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 100px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+  }
+  .growth-proof {
+    margin-top: 32px;
+    padding: 24px;
+    background: var(--color-accent-subtle);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--color-accent);
+  }
+  .growth-proof p { margin: 0; font-size: 16px; color: var(--color-primary); }
+  .growth-proof strong { font-weight: 600; }
+
+  /* === RESPONSIBILITY BLOCKS === */
+  .resp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  .resp-block h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .resp-block h3::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .resp-block ul { list-style: none; padding: 0; }
+  .resp-block li {
+    padding-left: 28px;
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: var(--color-neutral-700);
+    line-height: 1.6;
+  }
+  .resp-block li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-accent);
+    font-weight: 700;
+  }
+  .mentor-tag {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 4px 12px;
+    background: var(--color-accent-subtle);
+    color: var(--color-accent-dark);
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 100px;
+    font-family: var(--font-heading);
+  }
+
+  /* === PROFILE === */
+  .profile {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+  .profile h2 { color: var(--color-white); }
+  .profile .section-label { color: var(--color-neutral-400); }
+  .profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .profile-item {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    transition: all 0.2s ease;
+  }
+  .profile-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: var(--color-accent);
+  }
+  .profile-item h4 {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--color-white);
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .profile-item h4 .num {
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: 14px;
+    font-family: var(--font-body);
+  }
+  .profile-item p {
+    color: var(--color-neutral-300);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .profile-item h4 small {
+    color: var(--color-neutral-400);
+    font-weight: 400;
+    font-size: 13px;
+    margin-left: 4px;
+  }
+
+  /* === OFFER === */
+  .offer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 40px;
+  }
+  .offer-item {
+    padding: 24px;
+    border: 1px solid var(--color-neutral-200);
+    border-radius: var(--radius-lg);
+    background: var(--color-white);
+    transition: all 0.2s ease;
+  }
+  .offer-item:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+  .offer-item h4 {
+    font-family: var(--font-heading);
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--color-primary);
+  }
+  .offer-item p {
+    font-size: 15px;
+    color: var(--color-neutral-500);
+    line-height: 1.5;
+    margin: 0;
+  }
+  .offer-highlight {
+    grid-column: 1 / -1;
+    background: var(--color-accent-subtle);
+    border-color: var(--color-accent);
+    padding: 28px;
+  }
+  .offer-highlight h4 { color: var(--color-accent-dark); font-size: 19px; }
+  .offer-highlight p { color: var(--color-primary); font-size: 16px; }
+  .offer-highlight .salary {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-top: 8px;
+    display: block;
+  }
+
+  /* === CLOSING === */
+  .closing {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+    color: var(--color-white);
+    padding: 80px 0;
+    text-align: center;
+  }
+  .closing h2 {
+    color: var(--color-white);
+    font-size: clamp(28px, 4vw, 38px);
+    max-width: 700px;
+    margin: 0 auto 24px;
+  }
+  .closing p {
+    color: var(--color-neutral-300);
+    font-size: 18px;
+    max-width: 560px;
+    margin: 0 auto 32px;
+  }
+
+  /* === FORM === */
+  .form-section {
+    background: var(--color-neutral-50);
+    padding: 80px 0;
+  }
+  .form-card {
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    padding: 48px;
+    box-shadow: var(--shadow-lg);
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .form-card h2 { margin-bottom: 12px; }
+  .form-card .form-sub {
+    color: var(--color-neutral-500);
+    margin-bottom: 32px;
+    font-size: 17px;
+  }
+  .form-group { margin-bottom: 20px; }
+  .form-group label {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--color-primary);
+  }
+  .form-group .req { color: var(--color-accent); }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--color-neutral-300);
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--color-primary);
+    background: var(--color-white);
+    transition: all 0.2s ease;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(217, 119, 87, 0.15);
+  }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-group .hint {
+    font-size: 13px;
+    color: var(--color-neutral-400);
+    margin-top: 4px;
+  }
+  .file-upload {
+    border: 2px dashed var(--color-neutral-300);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: var(--color-neutral-50);
+  }
+  .file-upload:hover {
+    border-color: var(--color-accent);
+    background: var(--color-accent-subtle);
+  }
+  .file-upload input { display: none; }
+  .file-upload-label {
+    color: var(--color-neutral-500);
+    font-size: 15px;
+  }
+  .file-upload-label strong { color: var(--color-accent); }
+  .submit-btn {
+    width: 100%;
+    background: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+    padding: 16px;
+    border-radius: var(--radius-md);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 12px;
+  }
+  .submit-btn:hover {
+    background: var(--color-accent-dark);
+    box-shadow: var(--shadow-glow);
+  }
+  .form-footnote {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--color-neutral-400);
+  }
+
+  footer {
+    background: var(--color-primary);
+    color: var(--color-neutral-400);
+    padding: 32px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  footer a { color: var(--color-neutral-300); text-decoration: none; margin: 0 12px; }
+  footer a:hover { color: var(--color-accent); }
+
+  @media (max-width: 768px) {
+    .hero { padding: 60px 0 80px; }
+    .growth-track { grid-template-columns: 1fr; }
+    .resp-grid { grid-template-columns: 1fr; gap: 32px; }
+    .profile-grid { grid-template-columns: 1fr; }
+    .offer-grid { grid-template-columns: 1fr; }
+    .form-card { padding: 32px 24px; }
+    .topbar-meta { display: none; }
+    section { padding: 56px 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-logo"><img src="data:image/png;base64,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" alt="CD Commerce" style="height:40px; width:auto;"></div>
+    <div class="topbar-right">
+      <div class="topbar-meta">
+        <span data-de="Bebra · Nordhessen" data-en="Bebra · Northern Hesse">Bebra · Nordhessen</span>
+        <span data-de="Internationales Team" data-en="International Team">Internationales Team</span>
+        <span data-de="5 Eigenmarken" data-en="5 Own Brands">5 Eigenmarken</span>
+      </div>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button class="lang-btn active" data-lang="de" onclick="setLang('de')">DE</button>
+        <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-section-label" data-de="Karriere bei CD Commerce" data-en="Careers at CD Commerce">Karriere bei CD Commerce</div>
+    <h1 data-de="Qualitätsspezialist <span class=&quot;accent&quot;>(m/w/d)</span><br>— Quereinsteiger willkommen." data-en="Quality Specialist <span class=&quot;accent&quot;>(m/f/d)</span><br>— Career changers welcome.">Qualitätsspezialist <span class="accent">(m/w/d)</span><br>— Quereinsteiger willkommen.</h1>
+    <p class="hero-sub" data-de="Du hast handwerkliches Geschick, ein Auge fürs Detail und Anpacker-Mentalität? Du willst eine Rolle, in der du wirklich etwas bewegst und dich weiterentwickelst? Dann sollten wir reden." data-en="You have technical skills, an eye for detail, and a hands-on attitude? You want a role where you actually make a difference and grow? Let's talk.">Du hast handwerkliches Geschick, ein Auge fürs Detail und Anpacker-Mentalität? Du willst eine Rolle, in der du wirklich etwas bewegst und dich weiterentwickelst? Dann sollten wir reden.</p>
+    <div class="hero-meta">
+      <span class="hero-pill" data-de="📍 Bebra · Vor Ort" data-en="📍 Bebra · On-site">📍 Bebra · Vor Ort</span>
+      <span class="hero-pill" data-de="💼 Vollzeit, unbefristet" data-en="💼 Full-time, permanent">💼 Vollzeit, unbefristet</span>
+      <span class="hero-pill" data-de="📈 Wachstumspfad zur Qualitätsleitung" data-en="📈 Growth path to Head of Quality">📈 Wachstumspfad zur Qualitätsleitung</span>
+      <span class="hero-pill" data-de="💰 Einstiegsgehalt: 3.500 – 4.500 € / Monat" data-en="💰 Starting salary: €3,500 – €4,500 / month">💰 Einstiegsgehalt: 3.500 – 4.500 € / Monat</span>
+    </div>
+    <a href="#bewerben" class="hero-cta" data-de="Jetzt bewerben" data-en="Apply now">Jetzt bewerben</a>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="container-narrow">
+    <div class="section-label" data-de="Worum es geht" data-en="What this is about">Worum es geht</div>
+    <h2 data-de="Wir suchen kein Zertifikat. Wir suchen ein Gespür." data-en="We're not looking for a certificate. We're looking for instinct.">Wir suchen kein Zertifikat. Wir suchen ein Gespür.</h2>
+    <p data-de="Wir sind die <strong>CD Commerce GmbH</strong> — inhabergeführtes E-Commerce-Unternehmen aus Bebra. Wir entwickeln eigene Marken und vertreiben sie europaweit. 50 Leute. 5 Marken. 16 Vertriebskanäle. Alles im eigenen Haus — von der Produktidee bis zum Kunden." data-en="We are <strong>CD Commerce GmbH</strong> — an owner-led e-commerce company based in Bebra, Germany. We build our own brands and sell them across Europe. 50 people. 5 brands. 16 sales channels. Everything in-house — from product idea to customer.">Wir sind die <strong>CD Commerce GmbH</strong> — inhabergeführtes E-Commerce-Unternehmen aus Bebra. Wir entwickeln eigene Marken und vertreiben sie europaweit. 50 Leute. 5 Marken. 16 Vertriebskanäle. Alles im eigenen Haus — von der Produktidee bis zum Kunden.</p>
+    <p data-de="Wir suchen jemanden, der unsere Produktqualität in die Hand nimmt — von der Fabrik bis zur Haustür. Du brauchst kein Studium im Qualitätsmanagement. Du brauchst keine zehn Jahre Erfahrung im Konzern." data-en="We're looking for someone to take ownership of our product quality — from factory floor to customer's doorstep. You don't need a degree in quality management. You don't need ten years of corporate experience.">Wir suchen jemanden, der unsere Produktqualität in die Hand nimmt — von der Fabrik bis zur Haustür. Du brauchst kein Studium im Qualitätsmanagement. Du brauchst keine zehn Jahre Erfahrung im Konzern.</p>
+    <p data-de="Was du brauchst: <strong>ein echtes Gespür für Produkte.</strong> Die Art Gespür, die man nicht aus Büchern lernt, sondern weil man Dinge auseinandernimmt, wieder zusammenbaut und Details sieht, die andere übersehen." data-en="What you need: <strong>a real feel for products.</strong> The kind of feel you don't learn from books, but by taking things apart, putting them back together, and noticing details others miss.">Was du brauchst: <strong>ein echtes Gespür für Produkte.</strong> Die Art Gespür, die man nicht aus Büchern lernt, sondern weil man Dinge auseinandernimmt, wieder zusammenbaut und Details sieht, die andere übersehen.</p>
+  </div>
+</section>
+
+<!-- GROWTH -->
+<section class="growth">
+  <div class="container">
+    <div class="section-label" data-de="Dein Weg bei uns" data-en="Your path with us">Dein Weg bei uns</div>
+    <h2 data-de="Klarer Wachstumspfad — vom Spezialisten zur Bereichsleitung." data-en="A clear growth path — from specialist to department lead.">Klarer Wachstumspfad — vom Spezialisten zur Bereichsleitung.</h2>
+    <p style="max-width: 640px;" data-de="Du startest an der Seite unseres Abteilungsleiters der Produktentwicklung. Du lernst, wie wir Produktmuster freigeben, mit Herstellern in China und Europa verhandeln und aus Reklamationen bessere Produkte machen. In 2–3 Jahren übernimmst du die Verantwortung für unseren Bereich Qualität." data-en="You'll start side-by-side with our Head of Product Development. You'll learn how we approve product samples, negotiate with manufacturers in China and Europe, and turn complaints into better products. In 2–3 years, you'll take ownership of our quality function.">Du startest an der Seite unseres Abteilungsleiters der Produktentwicklung. Du lernst, wie wir Produktmuster freigeben, mit Herstellern in China und Europa verhandeln und aus Reklamationen bessere Produkte machen. In 2–3 Jahren übernimmst du die Verantwortung für unseren Bereich Qualität.</p>
+    <div class="growth-track">
+      <div class="growth-step active" data-badge="Hier startest du" data-badge-de="Hier startest du" data-badge-en="You start here">
+        <div class="step-num">1</div>
+        <h4 data-de="Qualitätsspezialist" data-en="Quality Specialist">Qualitätsspezialist</h4>
+        <p data-de="Praktisch lernen, Produkte testen, eng mit der Produktentwicklung arbeiten. Von Anfang an." data-en="Hands-on learning, testing products, working closely with product development. From day one.">Praktisch lernen, Produkte testen, eng mit der Produktentwicklung arbeiten. Von Anfang an.</p>
+      </div>
+      <div class="growth-step">
+        <div class="step-num">2</div>
+        <h4 data-de="Qualitätsmanager" data-en="Quality Manager">Qualitätsmanager</h4>
+        <p data-de="Du übernimmst Verantwortung für eigene Produktbereiche und Lieferantenbeziehungen. In ~12 Monaten." data-en="You take ownership of specific product areas and supplier relationships. In ~12 months.">Du übernimmst Verantwortung für eigene Produktbereiche und Lieferantenbeziehungen. In ~12 Monaten.</p>
+      </div>
+      <div class="growth-step">
+        <div class="step-num">3</div>
+        <h4 data-de="Leitung Qualität" data-en="Head of Quality">Leitung Qualität</h4>
+        <p data-de="Du leitest den Bereich und baust dein eigenes Team auf. In 2–3 Jahren." data-en="You lead the function and build your own team. In 2–3 years.">Du leitest den Bereich und baust dein eigenes Team auf. In 2–3 Jahren.</p>
+      </div>
+    </div>
+    <div class="growth-proof">
+      <p data-de="<strong>Drei unserer aktuellen Bereichsleiter</strong> sind genau diesen Weg gegangen: solide Ausbildung, kein klassisches Studium, viel Eigeninitiative und Antrieb. Sie haben ihre Karriere bei uns aufgebaut. Du kannst es auch." data-en="<strong>Three of our current department leads</strong> took exactly this path: solid vocational training, no university degree, plenty of initiative and drive. They built their careers here. You can too."><strong>Drei unserer aktuellen Bereichsleiter</strong> sind genau diesen Weg gegangen: solide Ausbildung, kein klassisches Studium, viel Eigeninitiative und Antrieb. Sie haben ihre Karriere bei uns aufgebaut. Du kannst es auch.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESPONSIBILITIES -->
+<section>
+  <div class="container">
+    <div class="section-label" data-de="Deine Aufgaben" data-en="Your responsibilities">Deine Aufgaben</div>
+    <h2 data-de="Was du machst — vom ersten Tag an." data-en="What you'll do — from day one.">Was du machst — vom ersten Tag an.</h2>
+    <div class="resp-grid">
+
+      <div class="resp-block">
+        <h3 data-de="Praktische Qualitätsverantwortung" data-en="Hands-on quality ownership">Praktische Qualitätsverantwortung</h3>
+        <ul>
+          <li data-de="Produkte prüfen und Belastungstests durchführen — Schwächen finden, bevor unsere Kunden sie finden" data-en="Inspect products and run stress tests — find weaknesses before our customers do">Produkte prüfen und Belastungstests durchführen — Schwächen finden, bevor unsere Kunden sie finden</li>
+          <li data-de="Product Briefings und „Golden Samples" vor Massenproduktion mitprüfen" data-en="Review product briefings and &quot;Golden Samples&quot; before mass production">Product Briefings und „Golden Samples" vor Massenproduktion mitprüfen</li>
+          <li data-de="Vor- und Wareneingangsprüfungen begleiten" data-en="Support pre-shipment and goods receipt inspections">Vor- und Wareneingangsprüfungen begleiten</li>
+        </ul>
+        <span class="mentor-tag" data-de="Mit Begleitung vom Produktentwicklungs-Team" data-en="With mentoring from the Product Development team">Mit Begleitung vom Produktentwicklungs-Team</span>
+      </div>
+
+      <div class="resp-block">
+        <h3 data-de="An der Schnittstelle — eng mit allen Teams" data-en="At the intersection — close to every team">An der Schnittstelle — eng mit allen Teams</h3>
+        <ul>
+          <li data-de="Mit unserem Retourenteam zusammenarbeiten: bei systematischen Mustern Defekte selbst kontrollieren und Ursachen analysieren" data-en="Work with our Returns team: when systematic patterns appear, inspect defects yourself and analyze root causes">Mit unserem Retourenteam zusammenarbeiten: bei systematischen Mustern Defekte selbst kontrollieren und Ursachen analysieren</li>
+          <li data-de="Mit Customer Support eng abstimmen — sie sprechen täglich mit Kunden und kennen die Probleme aus erster Hand" data-en="Coordinate closely with Customer Support — they talk to customers daily and know problems first-hand">Mit Customer Support eng abstimmen — sie sprechen täglich mit Kunden und kennen die Probleme aus erster Hand</li>
+          <li data-de="Mit Marketing und Vertrieb Verkaufsdaten und Retourenquoten auswerten" data-en="Analyze sales data and return rates with Marketing and Sales">Mit Marketing und Vertrieb Verkaufsdaten und Retourenquoten auswerten</li>
+        </ul>
+      </div>
+
+      <div class="resp-block">
+        <h3 data-de="Produkte gemeinsam besser machen" data-en="Make products better, together">Produkte gemeinsam besser machen</h3>
+        <ul>
+          <li data-de="Mit der Produktentwicklung bestehende Produkte optimieren — Retourenquoten senken, Kundenzufriedenheit erhöhen" data-en="Improve existing products with Product Development — lower return rates, raise customer satisfaction">Mit der Produktentwicklung bestehende Produkte optimieren — Retourenquoten senken, Kundenzufriedenheit erhöhen</li>
+          <li data-de="Qualitätsprobleme und Verbesserungen mit unseren Lieferanten besprechen — überwiegend mit asiatischen Lieferanten, auf Englisch" data-en="Discuss quality issues and improvements with our suppliers — mostly with Asian suppliers, in English">Qualitätsprobleme und Verbesserungen mit unseren Lieferanten besprechen — überwiegend mit asiatischen Lieferanten, auf Englisch</li>
+          <li data-de="Defektquoten und Wettbewerbs-Benchmarks tracken, klare Prozessbeschreibungen aufbauen" data-en="Track defect rates and competitor benchmarks, build clear process documentation">Defektquoten und Wettbewerbs-Benchmarks tracken, klare Prozessbeschreibungen aufbauen</li>
+        </ul>
+      </div>
+
+      <div class="resp-block">
+        <h3 data-de="In die Bereichsleitung hineinwachsen" data-en="Grow into department leadership">In die Bereichsleitung hineinwachsen</h3>
+        <ul>
+          <li data-de="Eine Qualitätskultur im Unternehmen verankern — vom Einkauf bis zum Kunden" data-en="Anchor a quality culture across the company — from procurement to customer">Eine Qualitätskultur im Unternehmen verankern — vom Einkauf bis zum Kunden</li>
+          <li data-de="In 2–3 Jahren die volle Verantwortung für den Qualitätsbereich übernehmen" data-en="In 2–3 years, take full ownership of the quality function">In 2–3 Jahren die volle Verantwortung für den Qualitätsbereich übernehmen</li>
+          <li data-de="Größere Initiativen verantworten — auch zu Nachhaltigkeit und Abfallreduktion" data-en="Lead larger initiatives — including sustainability and waste reduction">Größere Initiativen verantworten — auch zu Nachhaltigkeit und Abfallreduktion</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section class="profile">
+  <div class="container">
+    <div class="section-label" data-de="Wen wir suchen" data-en="Who we're looking for">Wen wir suchen</div>
+    <h2 data-de="Wir suchen keinen perfekten Lebenslauf.<br>Wir suchen die richtige Mischung." data-en="We're not looking for a perfect CV.<br>We're looking for the right mix.">Wir suchen keinen perfekten Lebenslauf.<br>Wir suchen die richtige Mischung.</h2>
+    <div class="profile-grid">
+
+      <div class="profile-item">
+        <h4><span class="num">01</span><span data-de="Technisch-handwerklicher Hintergrund" data-en="Technical / hands-on background">Technisch-handwerklicher Hintergrund</span></h4>
+        <p data-de="Abgeschlossene Ausbildung wie z.B. Industriemechaniker, Werkzeugmechaniker, Mechatroniker, Metallbauer oder Vergleichbares — auch andere Berufe im ähnlichen Bereich passen. Techniker oder Meister sind ein Plus, kein Muss." data-en="Completed vocational training such as industrial mechanic, tool mechanic, mechatronics technician, metalworker, or similar — other jobs in related fields also fit. Technician or Master qualification is a plus, not a must.">Abgeschlossene Ausbildung wie z.B. Industriemechaniker, Werkzeugmechaniker, Mechatroniker, Metallbauer oder Vergleichbares — auch andere Berufe im ähnlichen Bereich passen. Techniker oder Meister sind ein Plus, kein Muss.</p>
+      </div>
+
+      <div class="profile-item">
+        <h4><span class="num">02</span><span data-de="Anpacker-Mentalität" data-en="Hands-on mentality">Anpacker-Mentalität</span></h4>
+        <p data-de="Du hast schon Dinge zerlegt und wieder zusammengebaut. Reparierst dein Fahrrad selbst, hast am Roller oder Auto geschraubt, beim Hausbau mit angepackt. Aufschrauben ist dein erster Reflex." data-en="You've taken things apart and put them back together. You repair your own bike, you've worked on a moped or car, you've helped on a house build. Opening something up is your first reflex.">Du hast schon Dinge zerlegt und wieder zusammengebaut. Reparierst dein Fahrrad selbst, hast am Roller oder Auto geschraubt, beim Hausbau mit angepackt. Aufschrauben ist dein erster Reflex.</p>
+      </div>
+
+      <div class="profile-item">
+        <h4><span class="num">03</span><span data-de="Auge fürs Detail" data-en="Eye for detail">Auge fürs Detail</span></h4>
+        <p data-de="Du erkennst, was ein Produkt besser macht: die saubere Verarbeitung, das passende Spaltmaß, das Kugellager, das einfach weicher läuft, die Oberfläche, die sich richtig anfühlt. Andere übersehen es. Du nicht." data-en="You see what makes a product better: clean finishing, the right gap dimensions, the bearing that simply runs smoother, the surface that just feels right. Others miss it. You don't.">Du erkennst, was ein Produkt besser macht: die saubere Verarbeitung, das passende Spaltmaß, das Kugellager, das einfach weicher läuft, die Oberfläche, die sich richtig anfühlt. Andere übersehen es. Du nicht.</p>
+      </div>
+
+      <div class="profile-item">
+        <h4><span class="num">04</span><span data-de="Analytische Seite" data-en="Analytical side">Analytische Seite</span></h4>
+        <p data-de="Du bist sicher mit Zahlen, Retourenquoten und Defekt-Trends. Du musst kein Excel-Profi sein — aber du verstehst, was Kennzahlen dir sagen." data-en="You're comfortable with numbers, return rates, and defect trends. You don't need to be an Excel pro — but you understand what KPIs are telling you.">Du bist sicher mit Zahlen, Retourenquoten und Defekt-Trends. Du musst kein Excel-Profi sein — aber du verstehst, was Kennzahlen dir sagen.</p>
+      </div>
+
+      <div class="profile-item">
+        <h4><span class="num">05</span><span data-de="Klar in der Kommunikation" data-en="Clear communicator">Klar in der Kommunikation</span></h4>
+        <p data-de="Du besprichst Qualitätsprobleme und Verbesserungen direkt mit unseren Lieferanten — überwiegend mit asiatischen Lieferanten, auf Englisch. Wie genau, lernst du bei uns. Wichtig ist: Du sagst, was Sache ist — direkt und respektvoll." data-en="You discuss quality issues and improvements directly with our suppliers — mostly with Asian suppliers, in English. You'll learn how with us. What matters: you say what's what — direct and respectful.">Du besprichst Qualitätsprobleme und Verbesserungen direkt mit unseren Lieferanten — überwiegend mit asiatischen Lieferanten, auf Englisch. Wie genau, lernst du bei uns. Wichtig ist: Du sagst, was Sache ist — direkt und respektvoll.</p>
+      </div>
+
+      <div class="profile-item">
+        <h4><span class="num">06</span><span data-de="Sprachen" data-en="Languages">Sprachen</span></h4>
+        <p data-de="Deutsch fließend. Englisch zumindest schriftlich solide — fließend gesprochen wäre ein Plus. Wichtig ist, dass du offen bist, es weiter zu lernen. Mehrere Kollegen haben sich genau so reingearbeitet — innerhalb von 6–12 Monaten." data-en="German fluent. English at least solid in writing — spoken fluency is a plus. What matters is that you're open to keep learning. Several colleagues have grown into it exactly this way — within 6–12 months.">Deutsch fließend. Englisch zumindest schriftlich solide — fließend gesprochen wäre ein Plus. Wichtig ist, dass du offen bist, es weiter zu lernen. Mehrere Kollegen haben sich genau so reingearbeitet — innerhalb von 6–12 Monaten.</p>
+      </div>
+
+      <div class="profile-item">
+        <h4><span class="num">07</span><span data-de="Materialgefühl" data-en="Material sense">Materialgefühl</span> <small data-de="(von Vorteil)" data-en="(a plus)">(von Vorteil)</small></h4>
+        <p data-de="Erfahrung mit Metall, Kunststoff oder technischen Stoffen? Perfekt. Du erkennst, ob eine Oberfläche sauber verarbeitet ist, ein Spaltmaß stimmt, ein Material wertig ist? Noch besser. Wenn nicht: Du lernst es bei uns." data-en="Experience with metal, plastics, or technical fabrics? Perfect. You can tell if a surface is cleanly finished, a gap dimension is right, a material feels solid? Even better. If not: you'll learn it with us.">Erfahrung mit Metall, Kunststoff oder technischen Stoffen? Perfekt. Du erkennst, ob eine Oberfläche sauber verarbeitet ist, ein Spaltmaß stimmt, ein Material wertig ist? Noch besser. Wenn nicht: Du lernst es bei uns.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section>
+  <div class="container">
+    <div class="section-label" data-de="Was wir bieten" data-en="What we offer">Was wir bieten</div>
+    <h2 data-de="Eine Rolle, in der dein Beitrag sichtbar wird." data-en="A role where your contribution shows.">Eine Rolle, in der dein Beitrag sichtbar wird.</h2>
+    <div class="offer-grid">
+
+      <div class="offer-item offer-highlight">
+        <h4 data-de="Faires Einstiegsgehalt" data-en="Fair starting salary">Faires Einstiegsgehalt</h4>
+        <p data-de="Je nach Qualifikation und Erfahrung — wird jährlich geprüft und an deine Entwicklung angepasst." data-en="Depending on qualification and experience — reviewed annually and adjusted to your development.">Je nach Qualifikation und Erfahrung — wird jährlich geprüft und an deine Entwicklung angepasst.</p>
+        <span class="salary" data-de="3.500 – 4.500 € brutto / Monat" data-en="€3,500 – €4,500 gross / month">3.500 – 4.500 € brutto / Monat</span>
+      </div>
+
+      <div class="offer-item">
+        <h4 data-de="Sichtbarer Beitrag" data-en="Visible contribution">Sichtbarer Beitrag</h4>
+        <p data-de="Deine Arbeit zeigt sich direkt in Produktbewertungen und der Stärke unserer Marken." data-en="Your work shows up directly in product reviews and the strength of our brands.">Deine Arbeit zeigt sich direkt in Produktbewertungen und der Stärke unserer Marken.</p>
+      </div>
+
+      <div class="offer-item">
+        <h4 data-de="Echte Begleitung" data-en="Real mentoring">Echte Begleitung</h4>
+        <p data-de="Du lernst von Menschen, die diese Firma von Null aufgebaut haben — kein kaltes Wasser." data-en="You learn from people who built this company from zero — no being thrown in cold.">Du lernst von Menschen, die diese Firma von Null aufgebaut haben — kein kaltes Wasser.</p>
+      </div>
+
+      <div class="offer-item">
+        <h4 data-de="Internationale Zusammenarbeit" data-en="International collaboration">Internationale Zusammenarbeit</h4>
+        <p data-de="Unser Team arbeitet weltweit — Deutschland, China, Südostasien. Direkter Austausch mit Kollegen und Lieferanten in Asien und Europa, auf Englisch." data-en="Our team works globally — Germany, China, Southeast Asia. Direct exchange with colleagues and suppliers in Asia and Europe, in English.">Unser Team arbeitet weltweit — Deutschland, China, Südostasien. Direkter Austausch mit Kollegen und Lieferanten in Asien und Europa, auf Englisch.</p>
+      </div>
+
+      <div class="offer-item">
+        <h4 data-de="Reisen zu unseren Lieferanten" data-en="Travel to our suppliers">Reisen zu unseren Lieferanten</h4>
+        <p data-de="Du wirst die Möglichkeit haben, ein- bis zweimal pro Jahr nach China zu unseren Lieferanten zu reisen — Werke besuchen, Beziehungen vor Ort aufbauen." data-en="You'll have the opportunity to travel to our suppliers in China once or twice a year — visit factories, build relationships on the ground.">Du wirst die Möglichkeit haben, ein- bis zweimal pro Jahr nach China zu unseren Lieferanten zu reisen — Werke besuchen, Beziehungen vor Ort aufbauen.</p>
+      </div>
+
+      <div class="offer-item">
+        <h4 data-de="Globale Team-Treffen" data-en="Global team gatherings">Globale Team-Treffen</h4>
+        <p data-de="Wir organisieren regelmäßig Treffen, bei denen das gesamte Team zusammenkommt — zuletzt sind wir mit knapp 40 Leuten für drei Tage nach Asien geflogen. Sowas planen wir auch in Zukunft wieder." data-en="We regularly organize gatherings that bring the entire team together — most recently, around 40 of us flew to Asia for three days. We're planning more of these in the future.">Wir organisieren regelmäßig Treffen, bei denen das gesamte Team zusammenkommt — zuletzt sind wir mit knapp 40 Leuten für drei Tage nach Asien geflogen. Sowas planen wir auch in Zukunft wieder.</p>
+      </div>
+
+      <div class="offer-item">
+        <h4 data-de="Eigenverantwortung mit Sicherheitsnetz" data-en="Ownership with a safety net">Eigenverantwortung mit Sicherheitsnetz</h4>
+        <p data-de="Du gestaltest Prozesse von Anfang an mit — mit der Leitung Produktentwicklung als Sparringspartner." data-en="You shape processes from day one — with the Head of Product Development as your sparring partner.">Du gestaltest Prozesse von Anfang an mit — mit der Leitung Produktentwicklung als Sparringspartner.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing">
+  <div class="container-narrow">
+    <h2 data-de="Das ist kein Job, in dem man sich ausruht." data-en="This isn't a job for someone who wants to coast.">Das ist kein Job, in dem man sich ausruht.</h2>
+    <p data-de="Das ist ein Job für jemanden, der etwas aufbauen will — und mit uns wächst, während er es tut." data-en="It's a job for someone who wants to build something — and grow with us while doing it.">Das ist ein Job für jemanden, der etwas aufbauen will — und mit uns wächst, während er es tut.</p>
+    <a href="#bewerben" class="hero-cta" data-de="Jetzt bewerben" data-en="Apply now">Jetzt bewerben</a>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section" id="bewerben">
+  <div class="container">
+    <div class="form-card">
+      <div class="section-label" data-de="Bewirb dich" data-en="Apply">Bewirb dich</div>
+      <h2 data-de="In 5 Minuten zur Bewerbung." data-en="Apply in 5 minutes.">In 5 Minuten zur Bewerbung.</h2>
+      <p class="form-sub" data-de="Wir melden uns innerhalb von 48 Stunden bei dir zurück. Versprochen." data-en="We'll get back to you within 48 hours. Promise.">Wir melden uns innerhalb von 48 Stunden bei dir zurück. Versprochen.</p>
+
+      <form id="apply-form">
+
+        <div class="form-group">
+          <label for="name" data-de="Vor- und Nachname" data-en="First and last name">Vor- und Nachname <span class="req">*</span></label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" data-de="E-Mail-Adresse" data-en="Email address">E-Mail-Adresse <span class="req">*</span></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone" data-de="Telefonnummer" data-en="Phone number">Telefonnummer</label>
+          <input type="tel" id="phone" name="phone">
+          <div class="hint" data-de="Optional — falls du einen Rückruf bevorzugst." data-en="Optional — if you'd prefer a call back.">Optional — falls du einen Rückruf bevorzugst.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="background" data-de="Was hast du bisher gemacht?" data-en="What have you done so far?">Was hast du bisher gemacht? <span class="req">*</span></label>
+          <textarea id="background" name="background" required data-placeholder-de="Z. B.: Ausbildung als Industriemechaniker, 4 Jahre in der Produktion, Hobby-Schrauber..." data-placeholder-en="E.g.: Apprenticeship as industrial mechanic, 4 years in production, hobby tinkerer..." placeholder="Z. B.: Ausbildung als Industriemechaniker, 4 Jahre in der Produktion, Hobby-Schrauber..."></textarea>
+          <div class="hint" data-de="2–3 Sätze reichen. Wir wollen ein Gefühl für deinen Hintergrund bekommen." data-en="2–3 sentences are enough. We just want a feel for your background.">2–3 Sätze reichen. Wir wollen ein Gefühl für deinen Hintergrund bekommen.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="motivation" data-de="Warum du?" data-en="Why you?">Warum du? <span class="req">*</span></label>
+          <textarea id="motivation" name="motivation" required data-placeholder-de="Was reizt dich an dieser Rolle? Was kannst du besonders gut?" data-placeholder-en="What excites you about this role? What are you especially good at?" placeholder="Was reizt dich an dieser Rolle? Was kannst du besonders gut?"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label data-de="Lebenslauf hochladen" data-en="Upload CV">Lebenslauf hochladen</label>
+          <label class="file-upload" for="cv">
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+            <div class="file-upload-label">
+              <span data-de="<strong>Datei auswählen</strong> oder hierhin ziehen<br><small>PDF, DOC, DOCX · max. 10 MB</small>" data-en="<strong>Choose file</strong> or drop here<br><small>PDF, DOC, DOCX · max. 10 MB</small>"><strong>Datei auswählen</strong> oder hierhin ziehen<br><small>PDF, DOC, DOCX · max. 10 MB</small></span>
+            </div>
+          </label>
+          <div class="hint" data-de="Optional. Wenn du keinen aktuellen CV hast, kein Problem — die Felder oben reichen für den Anfang." data-en="Optional. If you don't have an up-to-date CV, no problem — the fields above are enough to start.">Optional. Wenn du keinen aktuellen CV hast, kein Problem — die Felder oben reichen für den Anfang.</div>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submit-btn" data-de="Bewerbung absenden →" data-en="Submit application →">Bewerbung absenden →</button>
+        <div class="form-footnote" data-de="Mit dem Absenden stimmst du unserer Datenschutzerklärung zu." data-en="By submitting, you accept our privacy policy.">Mit dem Absenden stimmst du unserer Datenschutzerklärung zu.</div>
+
+        <div id="form-success" style="display:none; margin-top:20px; padding:16px 20px; background:#f0fdf4; border:1px solid #bbf7d0; border-radius:10px; color:#166534; font-weight:500;">
+          ✓ <span data-de="Danke! Deine Bewerbung ist bei uns eingegangen. Wir melden uns innerhalb von 48 Stunden." data-en="Thank you! Your application has been received. We'll get back to you within 48 hours.">Danke! Deine Bewerbung ist bei uns eingegangen. Wir melden uns innerhalb von 48 Stunden.</span>
+        </div>
+        <div id="form-error" style="display:none; margin-top:20px; padding:16px 20px; background:#fef2f2; border:1px solid #fecaca; border-radius:10px; color:#991b1b; font-weight:500;">
+          ✗ <span data-de="Etwas ist schiefgelaufen. Bitte versuche es erneut oder schreib uns direkt an ch.dick@cd-commerce.de" data-en="Something went wrong. Please try again or email us directly at ch.dick@cd-commerce.de">Etwas ist schiefgelaufen. Bitte versuche es erneut oder schreib uns direkt an ch.dick@cd-commerce.de</span>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>CD Commerce GmbH · Ernst-Abbe-Straße 2 · 36179 Bebra</p>
+    <p style="margin-top: 8px;">
+      <a href="https://cd-commerce.de">cd-commerce.de</a>
+      <a href="https://cd-commerce.de/impressum" data-de="Impressum" data-en="Imprint">Impressum</a>
+      <a href="https://cd-commerce.de/datenschutz" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  // === LANGUAGE TOGGLE ===
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+
+    // Toggle button states
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+
+    // Swap text content for elements with data-de / data-en
+    document.querySelectorAll('[data-de][data-en]').forEach(el => {
+      const newContent = el.dataset[lang];
+      if (newContent !== undefined) {
+        // Use innerHTML because some content contains <strong>, <br>, <span>
+        el.innerHTML = newContent;
+      }
+    });
+
+    // Swap placeholders
+    document.querySelectorAll('[data-placeholder-de][data-placeholder-en]').forEach(el => {
+      const ph = el.dataset['placeholder' + lang.charAt(0).toUpperCase() + lang.slice(1)];
+      if (ph !== undefined) el.placeholder = ph;
+    });
+
+    // Update active growth-step badge
+    document.querySelectorAll('.growth-step.active').forEach(el => {
+      const badge = el.dataset['badge' + lang.charAt(0).toUpperCase() + lang.slice(1)];
+      if (badge) el.dataset.badge = badge;
+    });
+
+    // Save preference
+    try { localStorage.setItem('cd-lang', lang); } catch(e) {}
+  }
+
+  // Restore preference on load
+  (function() {
+    let saved = 'de';
+    try { saved = localStorage.getItem('cd-lang') || 'de'; } catch(e) {}
+    if (saved === 'en') setLang('en');
+  })();
+
+  // === FORM SUBMISSION (EmailJS) ===
+  const applyForm = document.getElementById('apply-form');
+  if (applyForm) {
+    applyForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submit-btn');
+      const errorDiv = document.getElementById('form-error');
+      const successDiv = document.getElementById('form-success');
+      const lang = document.documentElement.lang;
+      btn.disabled = true;
+      btn.textContent = lang === 'en' ? 'Sending…' : 'Wird gesendet…';
+
+      // Read CV file as base64 if provided
+      const cvInput = document.getElementById('cv');
+      let cvBase64 = '';
+      let cvName = '';
+      if (cvInput && cvInput.files && cvInput.files[0]) {
+        const file = cvInput.files[0];
+        cvName = file.name;
+        cvBase64 = await new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result); // data:...;base64,...
+          reader.onerror = reject;
+          reader.readAsDataURL(file);
+        });
+      }
+
+      const templateParams = {
+        from_name:   document.getElementById('name').value,
+        from_email:  document.getElementById('email').value,
+        phone:       document.getElementById('phone').value || 'Nicht angegeben',
+        background:  document.getElementById('background').value,
+        motivation:  document.getElementById('motivation').value,
+        cv_name:     cvName || 'Kein Lebenslauf hochgeladen',
+        cv_file:     cvBase64 || ''
+      };
+
+      try {
+        await emailjs.send(
+          'YOUR_EMAILJS_SERVICE_ID',
+          'YOUR_EMAILJS_TEMPLATE_ID',
+          templateParams
+        );
+        applyForm.reset();
+        successDiv.style.display = 'block';
+        errorDiv.style.display = 'none';
+        btn.style.display = 'none';
+      } catch (err) {
+        errorDiv.style.display = 'block';
+        successDiv.style.display = 'none';
+        btn.disabled = false;
+        btn.textContent = lang === 'en' ? 'Submit application →' : 'Bewerbung absenden →';
+      }
+    });
+  }
+
+  // === FILE UPLOAD FEEDBACK ===
+  const fileInput = document.getElementById('cv');
+  const fileLabel = document.querySelector('.file-upload-label');
+  if (fileInput) {
+    fileInput.addEventListener('change', function() {
+      if (this.files && this.files[0]) {
+        const lang = document.documentElement.lang;
+        const changeText = lang === 'en' ? 'Click to change' : 'Klicken zum Ändern';
+        fileLabel.innerHTML = '<strong>✓ ' + this.files[0].name + '</strong><br><small>' + changeText + '</small>';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
