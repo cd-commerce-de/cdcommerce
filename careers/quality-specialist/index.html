@@ -8,8 +8,6 @@
 <title>Qualitätsspezialist (m/w/d) — CD Commerce GmbH, Bebra</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");</script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -880,7 +878,9 @@ src="https://www.facebook.com/tr?id=969262715469224&ev=PageView&noscript=1"
       <h2 data-de="In 5 Minuten zur Bewerbung." data-en="Apply in 5 minutes.">In 5 Minuten zur Bewerbung.</h2>
       <p class="form-sub" data-de="Wir melden uns innerhalb von 48 Stunden bei dir zurück. Versprochen." data-en="We'll get back to you within 48 hours. Promise.">Wir melden uns innerhalb von 48 Stunden bei dir zurück. Versprochen.</p>
 
-      <form id="apply-form">
+      <form id="apply-form" action="https://formspree.io/f/mojrayey" method="POST">
+        <input type="hidden" name="_subject" value="Neue Bewerbung: Qualitätsspezialist (m/w/d)">
+        <input type="hidden" name="_cc" value="d.guiang@cd-commerce.de">
 
         <div class="form-group">
           <label for="name" data-de="Vor- und Nachname" data-en="First and last name">Vor- und Nachname <span class="req">*</span></label>
@@ -989,7 +989,7 @@ src="https://www.facebook.com/tr?id=969262715469224&ev=PageView&noscript=1"
     if (saved === 'en') setLang('en');
   })();
 
-  // === FORM SUBMISSION (EmailJS) ===
+  // === FORM SUBMISSION (Formspree) ===
   const applyForm = document.getElementById('apply-form');
   if (applyForm) {
     applyForm.addEventListener('submit', async function(e) {
@@ -1001,41 +1001,23 @@ src="https://www.facebook.com/tr?id=969262715469224&ev=PageView&noscript=1"
       btn.disabled = true;
       btn.textContent = lang === 'en' ? 'Sending…' : 'Wird gesendet…';
 
-      // Read CV file as base64 if provided
-      const cvInput = document.getElementById('cv');
-      let cvBase64 = '';
-      let cvName = '';
-      if (cvInput && cvInput.files && cvInput.files[0]) {
-        const file = cvInput.files[0];
-        cvName = file.name;
-        cvBase64 = await new Promise((resolve, reject) => {
-          const reader = new FileReader();
-          reader.onload = () => resolve(reader.result); // data:...;base64,...
-          reader.onerror = reject;
-          reader.readAsDataURL(file);
-        });
-      }
-
-      const templateParams = {
-        from_name:   document.getElementById('name').value,
-        from_email:  document.getElementById('email').value,
-        phone:       document.getElementById('phone').value || 'Nicht angegeben',
-        background:  document.getElementById('background').value,
-        motivation:  document.getElementById('motivation').value,
-        cv_name:     cvName || 'Kein Lebenslauf hochgeladen',
-        cv_file:     cvBase64 || ''
-      };
+      const formData = new FormData(applyForm);
 
       try {
-        await emailjs.send(
-          'YOUR_EMAILJS_SERVICE_ID',
-          'YOUR_EMAILJS_TEMPLATE_ID',
-          templateParams
-        );
-        applyForm.reset();
-        successDiv.style.display = 'block';
-        errorDiv.style.display = 'none';
-        btn.style.display = 'none';
+        const res = await fetch('https://formspree.io/f/mojrayey', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: formData
+        });
+        const result = await res.json();
+        if (res.ok && result.ok) {
+          applyForm.reset();
+          successDiv.style.display = 'block';
+          errorDiv.style.display = 'none';
+          btn.style.display = 'none';
+        } else {
+          throw new Error(JSON.stringify(result));
+        }
       } catch (err) {
         errorDiv.style.display = 'block';
         successDiv.style.display = 'none';
