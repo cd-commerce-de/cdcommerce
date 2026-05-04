@@ -7,8 +7,7 @@
 <title>Senior AI Developer — CD Commerce GmbH</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -1032,7 +1031,8 @@ src="https://www.facebook.com/tr?id=969262715469224&ev=PageView&noscript=1"
       <div class="section-label">Apply</div>
       <h2>Quick intro. We'll take it from there.</h2>
       <p class="form-sub">Don't overthink this — short and honest beats long and polished. We'll reach out within 7 days for a real conversation.</p>
-      <form id="application-form">
+      <form id="application-form" action="https://formspree.io/f/mgodayek" method="POST" enctype="multipart/form-data">
+
         <div class="form-group">
           <label>Full name <span class="req">*</span></label>
           <input type="text" name="name" required>
@@ -1090,13 +1090,40 @@ src="https://www.facebook.com/tr?id=969262715469224&ev=PageView&noscript=1"
     });
   }
 
-  // Form submit (EmailJS — replace IDs)
+  // Form submit via Formspree
   document.getElementById('application-form').addEventListener('submit', function(e) {
     e.preventDefault();
     if (typeof fbq !== 'undefined') { fbq('track', 'Lead'); }
-    // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this).then(...)
-    alert('Thanks — got it. We will reach out within 7 days.');
-    this.reset();
+
+    var btn = this.querySelector('.submit-btn');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+
+    var data = new FormData(this);
+
+    fetch(this.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function(response) {
+      if (response.ok) {
+        btn.textContent = '✓ Sent — we\'ll be in touch within 7 days.';
+        btn.style.background = 'var(--color-success)';
+        document.getElementById('application-form').reset();
+        var label = document.querySelector('.file-upload-label');
+        if (label) label.innerHTML = 'Drop your CV here or <strong>click to upload</strong>';
+      } else {
+        btn.textContent = 'Something went wrong — try again';
+        btn.style.background = 'var(--color-error)';
+        btn.disabled = false;
+      }
+    })
+    .catch(function() {
+      btn.textContent = 'Something went wrong — try again';
+      btn.style.background = 'var(--color-error)';
+      btn.disabled = false;
+    });
   });
 </script>
 
