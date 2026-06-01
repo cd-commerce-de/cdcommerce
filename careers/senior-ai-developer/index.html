@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAADuElEQVR4nO1WzW8TRxR/M7vr/YgdLBNM80FoHAlaFRcTVUQt0DRRU8Oh/BmAokJ6CVRtQBVSW5UG9SNwL2qr4qYc+sGhnHIpOTSJDFJoyiVqkK24EY699lrendl5PSwY2zFOVBWplfgd38z8fm9+783bJYgITxL0ibI/FfhPCMib2YSIrutWRyillG4qObJhmyIiIWR9XAhBCGm4VI0NbuC6riRJhUJh8tKk7TBKCAI8Ew4PDg3t3rWriXxNgo+D67qIuLa2dmjg1bpTmm6cGBmxLAsRhRBNSOoFhBCcc8a54ziMsYWFOz2RSC05UTVD1QwAiB85YtuO67rrNYQQjDHGWE0NPEOqycZOn76VTAZDIcuyLMsihDDGksmkVSz5A4Gimfv0s8/fHj3FOZflR25X+/ZIwIuWSqW5+bmVlQwhRAhBKQ0EAmY+372zu39/v7fz1u3bbx49upJecQV/YU90fvY3Ly2P1ONxHGdqampubh6863h2fzE5GentXV+nrW1tMzMz3pVt20bEDz78CAAUnx5q27a6ulqphBBCCJHNZl85eAAAFE2HSjFPjIwAAKGybvgl2UclRVE0AHgxtvfP5eU6i8fOvAMAik/bFt6ezWYrAowxRDx77hwAvH/+fC6fBy/01dffAECLPyApKgB0dO3Y2RPp6Ox6bXAwnU4jYtkum6ZZKBRyudy3iauB1i2qZlBKXz5w0Mu6uvEODQwoqpY3TUQEb/ml/f2UUlXVW4PB769dy+fzhULBNE3OOSLOzs7uiUa7dnR3P9vT3tkFALJPNVoCAHA1kUBEbxsicu4i4huHD8uKb/nevQdtmslktoS2KqoOAO+dHa9z49ebN8Ph7QAgKyqVFEn26YafUBkA3jp5spL1QwGOiF9euQIAQ68P/3z9OiBiKpUOBEM+zQCAiYsXEdG2ba+kie8SDZ9npLf30uXLdewVl4QQ746PE6+1vBaKxmJ3F/+QKO3o7Pzpxx+i0ahH9MuNGyXL0g3DKha560qShIgd7e37+voMXcemcyKVSi0tLRHGmCzLFyYmzoyN+VuDxYLZ4vfHYnsVRUGA1kCrqqm5+/djffs++fhC9fn1r7LxqneDcrk8HI8DwMMxUJPX7ueeX1i4wxhzHIdzzjlvPn8qXnHOodLClmUdO37cp2p1uQzH48ViETcaao/Dg1FRcfP3xcXp6elM5i9CQbjCMPTRU6OapjU3pAlqZhEiNvxONS/mZgU8eO+uOiJJ0j9mbyDwr+P//9vyVGBD/A2ilC0hHAW/FgAAAABJRU5ErkJggg==">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAFVklEQVR4nKVWXWxURRQ+M/feuTNz7/aHLRgaDBEkEQqiogWMohHYmkhXaRR9sJjgE4SGxACSyIP4go1vhgcJGHlRU0jKizw0LpAKiYotL/hDSyBSii2SuLXY3b0/M8eHaW+3La2tfDnZZG/OzHfOme+cGYKIMEcgota6/AsZw1Rn8j8IpoNSyrKsByJAREJIoVDo6uqiFkVEs8O8edV1y1cQShOfCWtmCa11HMeImN36GgAANcESALAd9tSaNceOH0s8k1VzIIiiCBH37tsHAFz6jPNxc7kJd0u2cWhoqJxjtgRm92OfHwcALjzGhMN4ublcSi8FABs3bQqCQCllOGZFYCpz4eJFLoTwPOmlhPTHTfjMHeXz/AoA+ODgwWTVfxOYWLq7u10upj19Ql0hbeYyV9iuKzz/xo0bZq09neAQ0WgOEQkhnRe+a2raKn1PxTEAoZQiICASQsIw7OzsvHWzj3GJWjmOUxz554sTJz46dEhrPTkDrXW5BmaJwcHBDS++AEA49ziXQMia+nqtldZ6Qh9orSmlAHDu3Ln20+2/Xe1RSo2qWaNGDQCWbf+d/2vnzl3v7thh/LXWjuNcv3599RNPBkFILRqHcaoy9esvP9cuXDiegSlL/+3+rU1NM7db/bq1+Xw+0Ulyni9t3DyqMVcQal25cgUR7fLYf795M5PJXOvtdYVHCEEsHzhoWXZQKi5duuTMN2eqqqq01uUdq7V+aMECADAfTb0BwDZ/AKBUKm17681rvb3ST0VhBAAECIztQAkNg0BI2dbWVpNOTx07lNK+W7fGtkZqWdQ4IGIUx4h4+ONWAJC+7zDXYZwLz2HCspllM9txLZsBQPvpdkQMw1AppbRWSimlTA9+/+MPzHUdxl0uCLXT8xf8efcuIoIRTT4/tHDRIsuyXS5tlztCAgCx7VRVlVdRWVldLYQ43NqKiEEYTlXR5cuXH122jFLL5ZILjxDy3PMbjCZtrbVlWbmzuYH+fi48pRShNCoWXn9j2/v796XTaVMpQsjixYujKGKOc7WnZ8+ePUprU/EgDC/9dCkYKTAulVKO4yBiNtto+glMgrt2txBCuPQN/6ZMZrqWzufzdStXTdKV5biMS4dx1xW2w9I18wcGBk0Go02baXjZKMzlEgjJnc0hoplZCaIo0lpvyWYBwPMrOPe4GLVkFpl59+mRIzhpFj39zFpDQC2ncl56YHBQ6wlj3Xi/t3cvAEgvxVw+0QSXHhceADRv3278NZZN0/p1zxoCy2ZeqqKvr09rbZJDxFgpRPzs6FEAYFxYjFHHKTMGlJpa7W5pieO4vAdHS/RKY9YQmCjaTp1ExFKpFMdxEARxHOdyOea6rhBcekwIV0jh+9JPGatd9HBj9tWOjg6zaXnqJIoi27b3HzjwSWurkL7WOozC5csf6zx/vqamJjnG4eHhQqFgOw5qDQQoocP3hpXSBAAR0+l0dXW16edJzwsSx7FlWd/mcpnNGcYFag2URqXCirq6lpbdtbW1SikgxGXMsiytkRCghI4URhoyDVLK8lGBYxN+AkxGQRCsWLXSdIrDOBNyst9EZBoa7g0PR1E0qeJTAYlCvvz6KwDgnu+4o3dsokJjLvdkqhKArF2/vlgsTqr1TAQJx9vbmwFA+hWJrsuNCw8IfWTJ0tt/3Max8T5bAiPKUrFo+ojaDpeekJ75FdLzfJ8x1/P9rq7uJKA5ECT5xnH84aEP0/Nr7lv6k6dO4dgTZpaYcGXi2Kvvzp07HR0dV3t6lVaEACE0DILHV69+p7n5vg/QGXCft+kMWySX9gMRAAAiJtf9uCshc4rd4F+yUGNrC9ddBQAAAABJRU5ErkJggg==">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Senior AI Developer at CD Commerce GmbH — remote, Philippines-based. Build the AI-first execution layer of a multi-channel D2C company. Path to Head of AI in 24 months.">
 <title>Senior AI Developer — CD Commerce GmbH</title>
@@ -578,96 +578,31 @@
     background: var(--color-neutral-50);
     padding: 80px 0;
   }
-  .form-card {
-    background: var(--color-white);
-    border-radius: var(--radius-xl);
-    padding: 48px;
-    box-shadow: var(--shadow-lg);
-    max-width: 640px;
-    margin: 0 auto;
-  }
-  .form-card h2 { margin-bottom: 12px; }
-  .form-card .form-sub {
+  .form-section .section-label { margin-bottom: 16px; }
+  .form-section h2 { margin-bottom: 12px; }
+  .form-section .form-sub {
     color: var(--color-neutral-500);
     margin-bottom: 32px;
     font-size: 17px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .form-group { margin-bottom: 20px; }
-  .form-group label {
-    display: block;
-    font-family: var(--font-heading);
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 6px;
-    color: var(--color-primary);
-  }
-  .form-group .req { color: var(--color-accent); }
-  .form-group input,
-  .form-group textarea {
+  .form-section .container { text-align: center; }
+  .form-section .section-label { justify-content: center; }
+  .clickup-form-wrapper {
     width: 100%;
-    padding: 12px 16px;
-    border: 1px solid var(--color-neutral-300);
-    border-radius: var(--radius-md);
-    font-family: var(--font-body);
-    font-size: 16px;
-    color: var(--color-primary);
+    max-width: 860px;
+    min-height: 600px;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
     background: var(--color-white);
-    transition: all 0.2s ease;
+    margin: 0 auto;
   }
-  .form-group input:focus,
-  .form-group textarea:focus {
-    outline: none;
-    border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px rgba(217, 119, 87, 0.15);
-  }
-  .form-group textarea { resize: vertical; min-height: 28px; }
-  .form-group .hint {
-    font-size: 13px;
-    color: var(--color-neutral-400);
-    margin-top: 4px;
-  }
-  .file-upload {
-    border: 2px dashed var(--color-neutral-300);
-    border-radius: var(--radius-md);
-    padding: 24px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    background: var(--color-neutral-50);
-  }
-  .file-upload:hover {
-    border-color: var(--color-accent);
-    background: var(--color-accent-subtle);
-  }
-  .file-upload input { display: none; }
-  .file-upload-label {
-    color: var(--color-neutral-500);
-    font-size: 15px;
-  }
-  .file-upload-label strong { color: var(--color-accent); }
-  .submit-btn {
-    width: 100%;
-    background: var(--color-accent);
-    color: var(--color-white);
-    border: none;
-    padding: 16px;
-    border-radius: var(--radius-md);
-    font-family: var(--font-heading);
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    margin-top: 12px;
-  }
-  .submit-btn:hover {
-    background: var(--color-accent-dark);
-    box-shadow: var(--shadow-glow);
-  }
-  .form-footnote {
-    text-align: center;
-    margin-top: 16px;
-    font-size: 13px;
-    color: var(--color-neutral-400);
+  .clickup-embed {
+    display: block;
+    min-height: 600px;
   }
 
   /* === CULTURE PROOF (Filipino Leadership) === */
@@ -737,7 +672,6 @@
     .offer-grid { grid-template-columns: 1fr; }
     .filter-grid { grid-template-columns: 1fr; }
     .culture-stats { grid-template-columns: 1fr; }
-    .form-card { padding: 32px 24px; }
     .topbar-meta { display: none; }
     section { padding: 56px 0; }
   }
@@ -1031,47 +965,12 @@ src="https://www.facebook.com/tr?id=969262715469224&ev=PageView&noscript=1"
 <!-- FORM -->
 <section class="form-section" id="apply">
   <div class="container">
-    <div class="form-card">
-      <div class="section-label">Apply</div>
-      <h2>Quick intro. We'll take it from there.</h2>
-      <p class="form-sub">Don't overthink this — short and honest beats long and polished. We'll reach out within 7 days for a real conversation.</p>
-      <form id="application-form" action="https://formspree.io/f/mgodayek" method="POST" enctype="multipart/form-data">
-
-        <div class="form-group">
-          <label>Full name <span class="req">*</span></label>
-          <input type="text" name="name" required>
-        </div>
-        <div class="form-group">
-          <label>Email <span class="req">*</span></label>
-          <input type="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label>WhatsApp or phone</label>
-          <input type="tel" name="phone" placeholder="optional">
-        </div>
-        <div class="form-group">
-          <label>LinkedIn URL</label>
-          <input type="url" name="linkedin" placeholder="optional">
-        </div>
-        <div class="form-group">
-          <label>Desired starting salary (PHP/month) <span class="req">*</span></label>
-          <input type="text" name="salary" placeholder="e.g. PHP 180,000" required>
-          <p class="hint">No fixed range from us. We'll talk trajectory (+1y, +2y) in the interview.</p>
-        </div>
-        <div class="form-group">
-          <label>One short message <span class="req">*</span></label>
-          <textarea name="message" placeholder="Anything you want to share — what you've built, why this role pulls you in, how you'd ship Day 1. Two or three sentences is enough." rows="5" required></textarea>
-        </div>
-        <div class="form-group">
-          <label>CV upload (optional)</label>
-          <label class="file-upload" for="cv">
-            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
-            <span class="file-upload-label">Drop your CV here or <strong>click to upload</strong></span>
-          </label>
-        </div>
-        <button type="submit" class="submit-btn">Send</button>
-        <p class="form-footnote">By submitting, you agree to CD Commerce GmbH processing your data for this application.</p>
-      </form>
+    <div class="section-label">Apply</div>
+    <h2>Quick intro. We'll take it from there.</h2>
+    <p class="form-sub">Don't overthink this — short and honest beats long and polished. We'll reach out within 7 days.</p>
+    <div class="clickup-form-wrapper">
+      <script async src="https://app-cdn.clickup.com/assets/js/forms-embed/v1.js"></script>
+      <iframe class="clickup-embed clickup-dynamic-height" src="https://forms.clickup.com/24555311/f/qdbtf-31305/4VYREYV7B99N57LXOY" onwheel="" width="100%" height="100%" style="background: transparent; border: none;"></iframe>
     </div>
   </div>
 </section>
@@ -1083,52 +982,6 @@ src="https://www.facebook.com/tr?id=969262715469224&ev=PageView&noscript=1"
 </footer>
 
 <script>
-  // CV file name display
-  const cvInput = document.getElementById('cv');
-  if (cvInput) {
-    cvInput.addEventListener('change', (e) => {
-      const label = e.target.closest('.file-upload').querySelector('.file-upload-label');
-      if (e.target.files[0]) {
-        label.innerHTML = '<strong>' + e.target.files[0].name + '</strong>';
-      }
-    });
-  }
-
-  // Form submit via Formspree
-  document.getElementById('application-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    if (typeof fbq !== 'undefined') { fbq('track', 'Lead'); }
-
-    var btn = this.querySelector('.submit-btn');
-    btn.textContent = 'Sending…';
-    btn.disabled = true;
-
-    var data = new FormData(this);
-
-    fetch(this.action, {
-      method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    })
-    .then(function(response) {
-      if (response.ok) {
-        btn.textContent = '✓ Sent — we\'ll be in touch within 7 days.';
-        btn.style.background = 'var(--color-success)';
-        document.getElementById('application-form').reset();
-        var label = document.querySelector('.file-upload-label');
-        if (label) label.innerHTML = 'Drop your CV here or <strong>click to upload</strong>';
-      } else {
-        btn.textContent = 'Something went wrong — try again';
-        btn.style.background = 'var(--color-error)';
-        btn.disabled = false;
-      }
-    })
-    .catch(function() {
-      btn.textContent = 'Something went wrong — try again';
-      btn.style.background = 'var(--color-error)';
-      btn.disabled = false;
-    });
-  });
 </script>
 
 </body>
